@@ -14,8 +14,11 @@ function sendEmail(link) {
         });
     }
 function formSub() {
-      alert(document.login_form.username.value);
-      alert(document.login_form.password.value);
+      let params = new URLSearchParams(location.search);
+      alert(params.get('username'));
+      alert(params.get('password'));
+      //alert(document.login_form.username.value);
+      //alert(document.login_form.password.value);
 }
 
 window.FontAwesomeKitConfig = {"asyncLoading":{"enabled":true},"autoA11y":{"enabled":true},"baseUrl":"https://ka-f.fontawesome.com","baseUrlKit":"https://kit.fontawesome.com","detectConflictsUntil":null,"iconUploads":{},"id":92233572,"license":"free","method":"css","minify":{"enabled":true},"token":"fc1e235b2e","v4FontFaceShim":{"enabled":true},"v4shim":{"enabled":true},"v5FontFaceShim":{"enabled":false},"version":"5.15.4"};
